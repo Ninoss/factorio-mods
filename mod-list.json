@@ -5,6 +5,10 @@
             "enabled": "true"
         },
         {
+            "name": "Aircraft",
+            "enabled": "true"
+        },
+        {
             "name": "gravestone-mod",
             "enabled": "true"
         },
