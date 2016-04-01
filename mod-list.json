@@ -13,6 +13,10 @@
             "enabled": "true"
         },
         {
+            "name": "Larger Inventory",
+            "enabled": "true"
+        },
+        {
             "name": "rso-mod",
             "enabled": "true"
         }
