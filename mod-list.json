@@ -5,6 +5,10 @@
             "enabled": "true"
         },
         {
+            "name": "advanced-logistics-system",
+            "enabled": "true"
+        },
+        {
             "name": "Aircraft",
             "enabled": "true"
         },
@@ -18,6 +22,10 @@
         },
         {
             "name": "Larger Inventory",
+            "enabled": "true"
+        },
+        {
+            "name": "Modular-Armor",
             "enabled": "true"
         },
         {
