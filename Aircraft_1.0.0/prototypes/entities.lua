@@ -59,9 +59,9 @@ data:extend({
         }
       }
     },
-		consumption = "600kW",
+    consumption = "1200kW",
     friction = 0.002,
-		light =
+    light =
     {
       {
         type = "oriented",
@@ -138,11 +138,12 @@ data:extend({
       match_speed_to_activity = true,
     },
 			stop_trigger_speed = 0.2,
-      acceleration_per_energy = 0.35,
+      acceleration_per_energy = 0.00005,
+	  emissions_per_tick = 500,
       breaking_speed = 0.09,
-			open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
+      open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
       close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
-      rotation_speed = 0.015,
+      rotation_speed = 0.002,
 			tank_driving = true,
       weight = 500,
       inventory_size = 10,
