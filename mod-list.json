@@ -9,11 +9,19 @@
             "enabled": "true"
         },
         {
+            "name": "AutoTrash",
+            "enabled": "true"
+        },
+        {
             "name": "gravestone-mod",
             "enabled": "true"
         },
         {
             "name": "Larger Inventory",
+            "enabled": "true"
+        },
+        {
+            "name": "MoreLogisticsSlots",
             "enabled": "true"
         },
         {
