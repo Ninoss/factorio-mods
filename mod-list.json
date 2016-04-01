@@ -7,6 +7,10 @@
         {
             "name": "gravestone-mod",
             "enabled": "true"
+        },
+        {
+            "name": "rso-mod",
+            "enabled": "true"
         }
     ]
 }
