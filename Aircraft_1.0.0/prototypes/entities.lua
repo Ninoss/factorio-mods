@@ -59,8 +59,8 @@ data:extend({
         }
       }
     },
-    consumption = "1200kW",
-    friction = 0.002,
+    consumption = "18000kW",
+    friction = 0.05,
     light =
     {
       {
@@ -138,7 +138,7 @@ data:extend({
       match_speed_to_activity = true,
     },
 			stop_trigger_speed = 0.2,
-      acceleration_per_energy = 0.00005,
+      acceleration_per_energy = 0.00000005,
 	  emissions_per_tick = 500,
       breaking_speed = 0.09,
       open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
