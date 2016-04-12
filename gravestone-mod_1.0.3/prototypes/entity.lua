@@ -20,7 +20,7 @@ data:extend({
     collision_box = {{-0.35, -0.35}, {0.35, 0.35}},
     selection_box = {{-0.5, -0.45}, {0.5, 0.5}},
 
-    inventory_size = 200,
+    inventory_size = 300,
     vehicle_impact_sound =  { filename = "__base__/sound/car-stone-impact.ogg", volume = 0.65 },
     picture = {
       filename = "__gravestone-mod__/graphics/gravestone.png",
