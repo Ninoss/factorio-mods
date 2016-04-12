@@ -33,6 +33,10 @@
             "enabled": "true"
         },
         {
+            "name": "Letters",
+            "enabled": "true"
+        },
+        {
             "name": "long-reach",
             "enabled": "true"
         },
@@ -45,11 +49,23 @@
             "enabled": "true"
         },
         {
+            "name": "NoMoreBots",
+            "enabled": "true"
+        },
+        {
             "name": "reverse-factory",
             "enabled": "true"
         },
         {
+            "name": "robotic-combinators",
+            "enabled": "true"
+        },
+        {
             "name": "rso-mod",
+            "enabled": "true"
+        },
+        {
+            "name": "SmartTrains",
             "enabled": "true"
         },
         {

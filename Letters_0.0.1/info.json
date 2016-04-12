@@ -1,0 +1,9 @@
+{
+	"name":"Letters",
+	"author":"yareczek",
+	"version":"0.0.1",
+	"title":"Letters",
+	"homepage":"",
+	"description":"Letters",
+	"dependencies": ["base >= 0.11.1"]
+}
