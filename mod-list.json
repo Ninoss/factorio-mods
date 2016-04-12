@@ -25,6 +25,10 @@
             "enabled": "true"
         },
         {
+            "name": "long-reach",
+            "enabled": "true"
+        },
+        {
             "name": "Modular-Armor",
             "enabled": "false"
         },
@@ -34,6 +38,14 @@
         },
         {
             "name": "rso-mod",
+            "enabled": "true"
+        },
+        {
+            "name": "Stainless Steel Wagon",
+            "enabled": "true"
+        },
+        {
+            "name": "TheFatController",
             "enabled": "true"
         }
     ]
