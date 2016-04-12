@@ -17,6 +17,14 @@
             "enabled": "true"
         },
         {
+            "name": "blueprint-string",
+            "enabled": "true"
+        },
+        {
+            "name": "fluid-barrel",
+            "enabled": "true"
+        },
+        {
             "name": "gravestone-mod",
             "enabled": "true"
         },
