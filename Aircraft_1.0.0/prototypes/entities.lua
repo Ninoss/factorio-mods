@@ -139,7 +139,7 @@ data:extend({
     },
 			stop_trigger_speed = 0.2,
       acceleration_per_energy = 0.00000005,
-	  emissions_per_tick = 500,
+	  emissions_per_tick = 5,
       breaking_speed = 0.09,
       open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
       close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
