@@ -45,6 +45,10 @@
             "enabled": "true"
         },
         {
+            "name": "reverse-factory",
+            "enabled": "true"
+        },
+        {
             "name": "rso-mod",
             "enabled": "true"
         },
