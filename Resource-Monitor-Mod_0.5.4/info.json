@@ -1,9 +1,0 @@
-{
-  "name": "Resource-Monitor-Mod",
-  "version": "0.5.4",
-  "title": "Resource-Monitor-Mod",
-  "author": "drs",
-  "homepage": "",
-  "dependencies": ["base >= 0.12.0"],
-  "description": "This mod helps you to keep track of your mining-sites"
-}

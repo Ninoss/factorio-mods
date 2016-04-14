@@ -26,3 +26,17 @@ function pretty(value,htchar,lfchar,indent)
 end
 --print(serpent.block(data.raw, {name="data.raw"}))
 --print(pretty(data.raw,"  "))
+function print(st)
+	for id, p in pairs(game.players) do
+		p.print(st)
+	end
+end
+remote.add_interface("p", {
+	-- remote.call("p", "prety", obj)
+	pretty = function(value)
+		print("Testing 123")
+		print("Testing 123")
+		print("Testing 123")
+		print(pretty(value))
+	end
+})
