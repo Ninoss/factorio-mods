@@ -65,10 +65,6 @@
             "enabled": "true"
         },
         {
-            "name": "Resource-Monitor-Mod",
-            "enabled": "true"
-        },
-        {
             "name": "reverse-factory",
             "enabled": "true"
         },
@@ -94,6 +90,10 @@
         },
         {
             "name": "TheFatController",
+            "enabled": "true"
+        },
+        {
+            "name": "YARM",
             "enabled": "true"
         }
     ]

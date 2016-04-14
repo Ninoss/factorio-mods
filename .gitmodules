@@ -1,0 +1,6 @@
+[submodule "SimpleTeleporters_0.0.5"]
+	path = SimpleTeleporters_0.0.5
+	url = https://github.com/iUltimateLP/Factorio-SimpleTeleporters.git
+[submodule "autofill_1.3.12"]
+	path = autofill_1.3.12
+	url = https://github.com/rk84/Autfill
