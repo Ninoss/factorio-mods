@@ -29,6 +29,10 @@
             "enabled": "true"
         },
         {
+            "name": "Landfill",
+            "enabled": "true"
+        },
+        {
             "name": "Larger Inventory",
             "enabled": "true"
         },

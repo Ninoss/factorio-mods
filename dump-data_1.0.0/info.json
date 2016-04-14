@@ -1,0 +1,12 @@
+
+{
+  "name":"dump-data",
+  "version":"1.0.0",
+  "title":"Dump Data",
+  "author":"Y.Petremann",
+  "description":"This mod dump all json data into console.",
+  "dependencies": [
+    "base",
+    "? trailer"
+  ]
+}
