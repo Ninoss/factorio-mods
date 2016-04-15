@@ -28,19 +28,21 @@ function pretty(value,htchar,lfchar,indent)
   end
 end
 
--- This seems to get called twice, so the multipied value here should
--- be the sqrt of what you really want. I.e. * 2 gives you 4x the stack
--- size.
 function increase_stack(val)
 	-- We need the < 10000, because some items seem to have really
 	-- huge default stack values (MAX_INT?), and multiplying them by
-	-- 4 causes everything to break.
+	-- 2 causes everything to break.
 	if val.stack_size and val.stack_size > 1 and val.stack_size < 10000 then
 		val.stack_size = val.stack_size * 2
 	end
 end
 
---print(pretty(data.raw))
+--local before = io.open("before.txt", "w")
+--before:write(pretty(data.raw))
+--before:close()
+print("BEFORE CHANGES")
+print(pretty(data.raw))
+print("END BEFORE")
 for _,dat in pairs(data.raw) do
    for _,items in pairs(dat) do
 		increase_stack(items)
@@ -50,6 +52,13 @@ for _,dat in pairs(data.raw) do
 		 --print(items.stack_size)
    end
 end
+print("AFTER CHANGES")
+print(pretty(data.raw))
+print("END AFTER")
+--local after = io.open("after.txt", "w")
+--after:write(pretty(data.raw))
+--after:close()
+
 --for i, ammo in pairs(data.raw.ammo) do
 --	increase_stack(ammo)
 	--if ammo.stack_size and ammo.stack_size>1 then
