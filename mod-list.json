@@ -30,7 +30,7 @@
         },
         {
             "name": "easybelt",
-            "enabled": "true"
+            "enabled": "false"
         },
         {
             "name": "fluid-barrel",
