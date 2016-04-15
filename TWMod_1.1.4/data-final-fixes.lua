@@ -39,8 +39,8 @@ end
 for _,dat in pairs(data.raw) do
    for _,items in pairs(dat) do
 		increase_stack(items)
-		print(pretty(items))
-		print(items.stack_size)
+		--print(pretty(items))
+		--print(items.stack_size)
          --items.stack_size = items.stack_size * 4
 		 --print(items.stack_size)
    end
