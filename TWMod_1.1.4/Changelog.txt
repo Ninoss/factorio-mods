@@ -1,0 +1,39 @@
+1.1.4
+Updated stack code with new smaller one.
+Some tweaks
+I'm Back! (Thank you Phe0n1x)
+
+1.1.3 (Phe0n1x unofficial update)
+Implemented [data-final-fixes.lua] with [url=http://www.factorioforums.com/forum/viewtopic.php?f=120&t=13897#p97155]code provided by Dysoch[/url] (DyTech) to be compatible with all mods (Thank you!)
+Merged everything into  [data-final-fixes.lua] for mod compatibility
+Removed unnecessary files
+
+1.1.2 (Phe0n1x unofficial update)
+Compatibility fix for 0.12.X [stacksize.lua] commented out science-pack-1, science-pack-2, science-pack-3, alien-science-pack, and rocket-defense as these didn't want to allow for stacksize modification
+
+1.1.1
+Removed modules on steel and stone furnace, due to not working... will fix later
+increased clip size on regluar magazines.
+Fixed wood and raw wood fuel value
+Faster furnaces.
+
+1.1.0
+Player health
+Fixed the rest of the item stacks, all items can have huge stacks now.
+Faster furnaces and added module slots.
+Faster drills
+Coal and wood have higher fuel value.
+faster handheld mining tools
+repair tool are tweaked.
+Resource richness is modified.
+
+1.0.0 - initial release.
+item stacks
+player inventory size
+
+
+
+
+
+
+
