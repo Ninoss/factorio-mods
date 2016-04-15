@@ -29,6 +29,10 @@
             "enabled": "true"
         },
         {
+            "name": "easybelt",
+            "enabled": "true"
+        },
+        {
             "name": "fluid-barrel",
             "enabled": "true"
         },
@@ -90,6 +94,10 @@
         },
         {
             "name": "TheFatController",
+            "enabled": "true"
+        },
+        {
+            "name": "TWMod",
             "enabled": "true"
         },
         {

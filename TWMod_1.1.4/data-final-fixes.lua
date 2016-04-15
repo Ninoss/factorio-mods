@@ -1,20 +1,63 @@
 local StackSize = 1000
 local MagSize = 500
+print("HI")
+function pretty(value,htchar,lfchar,indent)
+  local str
+  if htchar == nil then htchar = "\t" end
+  if lfchar == nil then lfchar = "\n" end
+  if indent == nil then indent = 0 end
+  if type(value)=="table" then
+    str = {}
+    for key,v in pairs(value) do
+      table.insert(str, string.format(
+        "%s%s%s:%s",
+        lfchar,
+        string.rep(htchar,indent+1),
+        string.format("%q", key):gsub("\\\n", "\\n"),
+        pretty(value[key],htchar,lfchar,indent+1)))
+    end
+    return string.format("{%s%s%s}",table.concat(str,","),lfchar,string.rep(htchar,indent))
+  elseif type(value)=="nil" then
+    return "nil"
+  elseif type(value)=="boolean" then
+    if value then return "true" else return "false" end
+  elseif type(value)=="string" then
+    return string.format("%q", value):gsub("\\\n", "\\n")
+  else
+    return tostring(value)
+  end
+end
+function increase_stack(val)
+	-- We need the < 10000, because some items seem to have really
+	-- huge default stack values (MAX_INT?), and multiplying them by
+	-- 4 causes everything to break.
+	if val.stack_size and val.stack_size > 1 and val.stack_size < 10000 then
+		val.stack_size = val.stack_size * 4
+	end
+end
+
 for _,dat in pairs(data.raw) do
    for _,items in pairs(dat) do
-      if items.stack_size and items.stack_size>1 then
-         items.stack_size = StackSize
-      end
+		increase_stack(items)
+		print(pretty(items))
+		print(items.stack_size)
+         --items.stack_size = items.stack_size * 4
+		 --print(items.stack_size)
    end
    for i, ammo in pairs(data.raw.ammo) do
-      ammo.stack_size = StackSize
-	  ammo.magazine_size = MagSize
+	   increase_stack(ammo)
+      --if ammo.stack_size and ammo.stack_size>1 then
+	--	-ammo.stack_size = math.max(ammo.stack_size * 4, 1)
+	  --end
+	  --if ammo.magazine_size then
+		--ammo.magazine_size = ammo.magazine_size * 4
+	 -- end
 	end
 	for i, mod in pairs(data.raw["module"]) do
-      mod.stack_size = StackSize
-   end
+      increase_stack(mod)
+    end
 	for i, cap in pairs(data.raw["capsule"]) do
-      cap.stack_size = StackSize
+      increase_stack(cap)
     end
 
 end
