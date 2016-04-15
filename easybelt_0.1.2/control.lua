@@ -3,48 +3,35 @@ require "defines"
 local toplace, pinfo, name
 
 function generate_toplace()
-	toplace = {}
-	global.toplace = {}
+	toplace_tmp = {}
 	for i,p in pairs(game.item_prototypes) do
 		if p.place_result and p.place_result.type=="transport-belt" then
 			name=p.place_result.name
-			if toplace[name] then
-				table.insert(toplace[name],i)
+			if toplace_tmp[name] then
+				table.insert(toplace_tmp[name],i)
 			else
-				toplace[name]={i}
+				toplace_tmp[name]={i}
 			end
 		end
 	end
-	for e,ls in pairs(toplace) do
+	toplace = {}
+	for e,ls in pairs(toplace_tmp) do
 		if #ls==1 then
-			global.toplace[e]=ls[1]
+			toplace[e]=ls[1]
 		else
 			for _,entry in pairs(ls) do
-				if entry==e then global.toplace[e]=e;break end
+				if entry==e then toplace[e]=e;break end
 			end
 		end
 	end
-	toplace = global.toplace
-end
-
-function starttick()
-	script.on_event(defines.events.on_tick,function()
-	if not global.toplace then generate_toplace() else toplace = global.toplace end
-	script.on_event(defines.events.on_tick,nil)
-	end)
 end
 
 function init()
-	if not global.pinfo then global.pinfo = {} end
-	pinfo = global.pinfo
+	if not pinfo then pinfo = {} end
+	if not toplace then generate_toplace() end
+	script.on_event(defines.events.on_tick, nil)
 end
-
-script.on_configuration_changed(starttick)
-script.on_load(init)
-script.on_init(function()
-	starttick()
-	init()
-end)
+script.on_event(defines.events.on_tick, init)
 
 script.on_event(defines.events.on_built_entity, function(event)
 	local e,p = event.created_entity, event.player_index
