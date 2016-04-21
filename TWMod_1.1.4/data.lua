@@ -40,21 +40,31 @@ end
 --local before = io.open("before.txt", "w")
 --before:write(pretty(data.raw))
 --before:close()
-print("BEFORE CHANGES")
-print(pretty(data.raw))
-print("END BEFORE")
-for _,dat in pairs(data.raw) do
-   for _,items in pairs(dat) do
-		increase_stack(items)
+--print("BEFORE CHANGES")
+--print(pretty(data.raw))
+--print("END BEFORE")
+-- for ent_type, dat in pairs(data.raw) do
+--    for item_type, items in pairs(dat) do
+-- 	   print(ent_type .. "." .. item_type .. ": " .. (items.stack_size or "nil"))
+-- 		--increase_stack(items)
+-- 		--print(pretty(items))
+-- 		--print(items.stack_size)
+--          --items.stack_size = items.stack_size * 4
+-- 		 --print(items.stack_size)
+--    end
+-- end
+for item_name, item in pairs(data.raw.item) do
+	increase_stack(item)
+	print(item_name .. ": " .. (item.stack_size or "nil"))
+		--increase_stack(items)
 		--print(pretty(items))
 		--print(items.stack_size)
          --items.stack_size = items.stack_size * 4
 		 --print(items.stack_size)
-   end
 end
-print("AFTER CHANGES")
-print(pretty(data.raw))
-print("END AFTER")
+--print("AFTER CHANGES")
+--print(pretty(data.raw))
+--print("END AFTER")
 --local after = io.open("after.txt", "w")
 --after:write(pretty(data.raw))
 --after:close()
