@@ -295,9 +295,9 @@ for item_name, item in pairs(data.raw.item) do
          --items.stack_size = items.stack_size * 4
 		 --print(items.stack_size)
 end
-data.raw.item['basic-transport-belt-to-ground'].stack_size = 500
-data.raw.item['iron-plate'].stack_size = 500
-data.raw.item['copper-plate'].stack_size = 500
+-- data.raw.item['basic-transport-belt-to-ground'].stack_size = 500
+-- data.raw.item['iron-plate'].stack_size = 500
+-- data.raw.item['copper-plate'].stack_size = 500
 
 --print("AFTER CHANGES")
 --print(pretty(data.raw))
