@@ -708,6 +708,10 @@ clearlinks = function(pid)
 	end
 	p.print("Deleted "..tostring(count).." links!")
 end,
+reset = function()
+	global.links = {}
+	global.names = {}
+end,
 cdd = function(pid)
 	local p = game.players[pid]
 	p.print(arraylength(cd))
