@@ -198,6 +198,9 @@ end
 
 function isValidTeleporter(entity)
 	local valid = false
+	if not entity.valid do
+		return false
+	end
 	for k,v in ipairs(tiers) do
 		if entity.name == v then
 			valid = true
