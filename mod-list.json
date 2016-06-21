@@ -9,6 +9,10 @@
             "enabled": "true"
         },
         {
+            "name": "AdvancedEquipment",
+            "enabled": "true"
+        },
+        {
             "name": "Aircraft",
             "enabled": "true"
         },
@@ -55,10 +59,6 @@
         {
             "name": "long-reach",
             "enabled": "true"
-        },
-        {
-            "name": "Modular-Armor",
-            "enabled": "false"
         },
         {
             "name": "MoreLogisticsSlots",
