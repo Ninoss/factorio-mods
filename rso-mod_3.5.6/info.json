@@ -1,0 +1,12 @@
+
+{
+  "name": "rso-mod",
+  "version": "3.5.6",
+  "factorio_version": "0.16",
+  "title": "Resource Spawner Overhaul",
+  "author": "Dark, orzelek",
+  "contact": "Message me on forums or use discussion board on mod portal",
+  "homepage": "https://forums.factorio.com/viewforum.php?f=79",
+  "description": "Overhauls resource spawning system.",
+  "dependencies": ["? bobenemies", "? bobores", "? 5dim_ores"]
+}

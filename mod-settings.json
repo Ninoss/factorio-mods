@@ -1,0 +1,425 @@
+{
+  "startup": {
+    "aircraft-sound-setting": {
+      "value": true
+    },
+    "aircraft-hardmode": {
+      "value": false
+    },
+    "aircraft-belt-immunity": {
+      "value": true
+    },
+    "helicopter-tech": {
+      "value": false
+    },
+    "heli-equipment-grid": {
+      "value": false
+    },
+    "raven-tech": {
+      "value": false
+    },
+    "dectorio-landscaping": {
+      "value": true
+    },
+    "dectorio-waterfill": {
+      "value": true
+    },
+    "dectorio-decoratives": {
+      "value": true
+    },
+    "dectorio-flooring": {
+      "value": true
+    },
+    "dectorio-gravel": {
+      "value": true
+    },
+    "dectorio-painted-concrete": {
+      "value": true
+    },
+    "dectorio-walls": {
+      "value": true
+    },
+    "dectorio-signs": {
+      "value": true
+    },
+    "dectorio-signals": {
+      "value": true
+    },
+    "dectorio-item-group": {
+      "value": true
+    },
+    "dectorio-vanilla-hazard-concrete-style": {
+      "value": false
+    },
+    "dectorio-landscaping-blueprintable": {
+      "value": false
+    },
+    "dectorio-decorative-removal-probability": {
+      "value": 1
+    },
+    "dectorio-flooring-stack-size": {
+      "value": 500
+    },
+    "dectorio-landscaping-stack-size": {
+      "value": 500
+    },
+    "dectorio-walls-stack-size": {
+      "value": 200
+    },
+    "hybrid-train": {
+      "value": true
+    },
+    "mk-cargo": {
+      "value": true
+    },
+    "mk-fluid": {
+      "value": true
+    },
+    "mk-train": {
+      "value": true
+    },
+    "Teleportation-telelogistics-enabled": {
+      "value": false
+    },
+    "early-autotrash-research": {
+      "value": true
+    },
+    "rf-difficulty": {
+      "value": true
+    },
+    "rf-dynamic": {
+      "value": false
+    },
+    "alien-biomes-terrain-scale": {
+      "value": 100
+    },
+    "alien-biomes-temperature-low": {
+      "value": -50
+    },
+    "alien-biomes-temperature-high": {
+      "value": 150
+    },
+    "alien-biomes-humidity-low": {
+      "value": 0
+    },
+    "alien-biomes-humidity-high": {
+      "value": 100
+    },
+    "alien-biomes-aux-low": {
+      "value": 0
+    },
+    "alien-biomes-aux-high": {
+      "value": 100
+    },
+    "alien-biomes-disable-vegetation": {
+      "value": false
+    },
+    "alien-biomes-remove-obsolete-tiles": {
+      "value": false
+    },
+    "rso-vanilla-biter-generation": {
+      "value": false
+    }
+  },
+  "runtime-global": {
+    "ltn-dispatcher-enabled": {
+      "value": true
+    },
+    "ltn-interface-console-level": {
+      "value": "2: Notifications"
+    },
+    "ltn-interface-message-filter-age": {
+      "value": 18000
+    },
+    "ltn-interface-debug-logfile": {
+      "value": false
+    },
+    "ltn-dispatcher-requester-threshold": {
+      "value": 1000
+    },
+    "ltn-dispatcher-provider-threshold": {
+      "value": 1000
+    },
+    "ltn-dispatcher-depot-inactivity": {
+      "value": 300
+    },
+    "ltn-dispatcher-stop-timeout": {
+      "value": 7200
+    },
+    "ltn-dispatcher-delivery-timeout": {
+      "value": 18000
+    },
+    "ltn-dispatcher-requester-delivery-reset": {
+      "value": false
+    },
+    "ltn-dispatcher-finish-loading": {
+      "value": true
+    },
+    "ltn-depot-reset-filters": {
+      "value": true
+    },
+    "nanobots-nanobots-auto": {
+      "value": true
+    },
+    "nanobots-nano-build-tiles": {
+      "value": true
+    },
+    "nanobots-network-limits": {
+      "value": true
+    },
+    "nanobots-nano-poll-rate": {
+      "value": 60
+    },
+    "nanobots-nano-queue-rate": {
+      "value": 12
+    },
+    "nanobots-nano-queue-per-cycle": {
+      "value": 100
+    },
+    "nanobots-cell-queue-rate": {
+      "value": 5
+    },
+    "nanobots-free-bots-per": {
+      "value": 50
+    },
+    "nanobots-equipment-auto": {
+      "value": true
+    },
+    "Teleportation-all-beacons-for-all": {
+      "value": false
+    },
+    "YARM-ticks-between-checks": {
+      "value": 600
+    },
+    "YARM-endless-resource-base": {
+      "value": 0
+    },
+    "YARM-overlay-step": {
+      "value": 1
+    },
+    "helmod_debug": {
+      "value": "none"
+    },
+    "helmod_debug_filter": {
+      "value": "all"
+    },
+    "helmod_format_number_element": {
+      "value": "0.0"
+    },
+    "helmod_format_number_factory": {
+      "value": "0"
+    },
+    "helmod_display_all_sheet": {
+      "value": false
+    },
+    "helmod_display_real_name": {
+      "value": false
+    },
+    "helmod_display_data_col_index": {
+      "value": false
+    },
+    "helmod_display_data_col_id": {
+      "value": false
+    },
+    "helmod_display_data_col_name": {
+      "value": false
+    },
+    "helmod_display_data_col_type": {
+      "value": false
+    },
+    "helmod_filter_on_text_changed": {
+      "value": false
+    },
+    "helmod_model_filter_factory": {
+      "value": true
+    },
+    "helmod_model_filter_beacon": {
+      "value": true
+    },
+    "helmod_model_filter_generator": {
+      "value": true
+    },
+    "helmod_model_filter_factory_module": {
+      "value": true
+    },
+    "helmod_model_filter_beacon_module": {
+      "value": true
+    },
+    "helmod_properties_tab": {
+      "value": false
+    },
+    "long-reach-build-distance": {
+      "value": 125
+    },
+    "long-reach-reach-distance": {
+      "value": 125
+    },
+    "nixie-tube-update-speed-alpha": {
+      "value": 10
+    },
+    "nixie-tube-update-speed-numeric": {
+      "value": 5
+    },
+    "rf-compati": {
+      "value": true
+    },
+    "rf-delays": {
+      "value": 30
+    },
+    "rso-region-size": {
+      "value": 7
+    },
+    "rso-starting-richness-mult": {
+      "value": 1
+    },
+    "rso-resource-chance": {
+      "value": 0.5
+    },
+    "rso-global-richness-mult": {
+      "value": 1
+    },
+    "rso-global-size-mult": {
+      "value": 1
+    },
+    "rso-biter-generation": {
+      "value": true
+    },
+    "rso-enemy-chance": {
+      "value": 0.25
+    },
+    "rso-enemy-base-size": {
+      "value": 1
+    },
+    "rso-distance-exponent": {
+      "value": 1.1
+    },
+    "rso-fluid-distance-exponent": {
+      "value": 0.6
+    },
+    "rso-size-exponent": {
+      "value": 0.2
+    },
+    "rso-use-donuts": {
+      "value": false
+    },
+    "rso-remove-trees": {
+      "value": false
+    },
+    "rso-oil-in-start-area": {
+      "value": true
+    },
+    "rso-infinite-ores-in-start-area": {
+      "value": false
+    },
+    "rso-infinite-ore-threshold": {
+      "value": 0.7
+    },
+    "rso-reveal-spawned-resources": {
+      "value": false
+    },
+    "rso-multi-resource-active": {
+      "value": true
+    }
+  },
+  "runtime-per-user": {
+    "FM_GoogleAPIKey": {
+      "value": ""
+    },
+    "FM_GoogleAPILink": {
+      "value": "https://developers.google.com/maps/documentation/javascript/get-api-key"
+    },
+    "nanobots-sync-cheat-mode": {
+      "value": true
+    },
+    "Teleportation-page-size": {
+      "value": 20
+    },
+    "Teleportation-straight-jump-ignores-collisions": {
+      "value": false
+    },
+    "YARM-warn-percent": {
+      "value": 10
+    },
+    "enable-ed": {
+      "value": true
+    },
+    "distribution-delay": {
+      "value": 0.9
+    },
+    "take-from-car": {
+      "value": true
+    },
+    "immediately-start-crafting": {
+      "value": true
+    },
+    "max-inventory-cleanup-drop-range": {
+      "value": 30
+    },
+    "inventory-cleanup-custom-trash": {
+      "value": "iron-plate:800 copper-plate:600 steel-plate:600 stone-brick:400"
+    },
+    "cleanup-logistic-request-overflow": {
+      "value": true
+    },
+    "drop-trash-to-chests": {
+      "value": true
+    },
+    "ignored-entities": {
+      "value": ""
+    },
+    "helmod_default_factory_level": {
+      "value": "last"
+    },
+    "helmod_display_size": {
+      "value": "1680x1050"
+    },
+    "helmod_display_size_free": {
+      "value": ""
+    },
+    "helmod_display_main_icon": {
+      "value": true
+    },
+    "helmod_display_location": {
+      "value": "center"
+    },
+    "helmod_display_cell_mod": {
+      "value": "default"
+    },
+    "helmod_display_product_cols": {
+      "value": 5
+    },
+    "helmod_display_ingredient_cols": {
+      "value": 5
+    },
+    "helmod_row_move_step": {
+      "value": 5
+    },
+    "manual-inventory-sort-buttons": {
+      "value": false
+    },
+    "manual-inventory-sort-on-open": {
+      "value": false
+    },
+    "manual-inventory-sort-self-on-open": {
+      "value": false
+    },
+    "research-queue-rows-count": {
+      "value": 8
+    },
+    "research-queue-table-height": {
+      "value": 8
+    },
+    "research-queue-table-width": {
+      "value": 10
+    },
+    "research-queue_popup-on-queue-finish": {
+      "value": false
+    },
+    "autofill-entity": {
+      "value": true
+    },
+    "autofill-ghost": {
+      "value": true
+    }
+  }
+}

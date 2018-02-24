@@ -1,0 +1,152 @@
+{
+  "mods": [
+    {
+      "name": "base",
+      "enabled": true
+    },
+    {
+      "name": "aai-programmable-vehicles",
+      "enabled": true
+    },
+    {
+      "name": "Advanced-Solar",
+      "enabled": true
+    },
+    {
+      "name": "Aircraft",
+      "enabled": true
+    },
+    {
+      "name": "alien-biomes",
+      "enabled": true
+    },
+    {
+      "name": "AlienWall",
+      "enabled": true
+    },
+    {
+      "name": "beltplanner",
+      "enabled": true
+    },
+    {
+      "name": "Crafting_Speed_Research",
+      "enabled": true
+    },
+    {
+      "name": "Dectorio",
+      "enabled": true
+    },
+    {
+      "name": "EfficienSee",
+      "enabled": true
+    },
+    {
+      "name": "ElectricTrain",
+      "enabled": true
+    },
+    {
+      "name": "Enhanced_Map_Colors",
+      "enabled": true
+    },
+    {
+      "name": "even-distribution",
+      "enabled": true
+    },
+    {
+      "name": "FactorioMaps",
+      "enabled": true
+    },
+    {
+      "name": "helmod",
+      "enabled": true
+    },
+    {
+      "name": "Honk",
+      "enabled": true
+    },
+    {
+      "name": "LightedPolesPlus",
+      "enabled": true
+    },
+    {
+      "name": "LogisticTrainNetwork",
+      "enabled": true
+    },
+    {
+      "name": "long-reach",
+      "enabled": true
+    },
+    {
+      "name": "longer-belts-redux",
+      "enabled": true
+    },
+    {
+      "name": "manual-inventory-sort",
+      "enabled": true
+    },
+    {
+      "name": "Nanobots",
+      "enabled": true
+    },
+    {
+      "name": "nixie-tubes",
+      "enabled": true
+    },
+    {
+      "name": "PersonalTeleporter",
+      "enabled": true
+    },
+    {
+      "name": "research-queue",
+      "enabled": true
+    },
+    {
+      "name": "reverse-factory",
+      "enabled": true
+    },
+    {
+      "name": "rso-mod",
+      "enabled": true
+    },
+    {
+      "name": "Single-Splitter",
+      "enabled": true
+    },
+    {
+      "name": "SmartTrains",
+      "enabled": true
+    },
+    {
+      "name": "Teleportation",
+      "enabled": true
+    },
+    {
+      "name": "textplates",
+      "enabled": true
+    },
+    {
+      "name": "TheFatController",
+      "enabled": true
+    },
+    {
+      "name": "VehicleSnap",
+      "enabled": true
+    },
+    {
+      "name": "Waterfill_v15",
+      "enabled": true
+    },
+    {
+      "name": "WaterWell",
+      "enabled": true
+    },
+    {
+      "name": "YARM",
+      "enabled": true
+    },
+    {
+      "name": "z_yira_american",
+      "enabled": true
+    }
+  ]
+}
