@@ -1,9 +1,0 @@
-{
-  "name": "GhostTime",
-  "version": "0.1.0",
-  "title": "Ghost Time",
-  "author": "MrDrummer25",
-  "homepage": "",
-  "dependencies": ["base"],
-  "description": "Extends the time for the ghost objects for construction."
-}

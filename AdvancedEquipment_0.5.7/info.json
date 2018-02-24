@@ -1,9 +1,0 @@
-{
-	"name":"AdvancedEquipment",
-	"author":"Darius456",
-	"version":"0.5.7",
-	"title":"AdvancedEquipment",
-	"homepage":"",
-	"description":"Better Equipment... MKII, MKIII,... etc.",
-	"dependencies": ["base"]
-}

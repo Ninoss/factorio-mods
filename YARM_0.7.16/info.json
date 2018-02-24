@@ -1,9 +1,0 @@
-{
-  "name": "YARM",
-  "version": "0.7.16",
-  "title": "Yet Another Resource Monitor Fork",
-  "author": "Octav 'narc' Sandulescu, based on work by drs, jorgenRe, and L0771",
-  "homepage": "https://github.com/narc0tiq/Resource-Monitor-Mod",
-  "dependencies": ["base >= 0.12.12"],
-  "description": "This mod helps you to keep track of your mining sites."
-}
