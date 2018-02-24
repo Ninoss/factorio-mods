@@ -57,6 +57,10 @@
       "enabled": true
     },
     {
+      "name": "Foreman",
+      "enabled": true
+    },
+    {
       "name": "Honk",
       "enabled": true
     },
@@ -81,15 +85,19 @@
       "enabled": true
     },
     {
-      "name": "Nanobots",
-      "enabled": true
-    },
-    {
       "name": "nixie-tubes",
       "enabled": true
     },
     {
       "name": "PersonalTeleporter",
+      "enabled": true
+    },
+    {
+      "name": "PickerExtended",
+      "enabled": true
+    },
+    {
+      "name": "recursive-blueprints",
       "enabled": true
     },
     {
