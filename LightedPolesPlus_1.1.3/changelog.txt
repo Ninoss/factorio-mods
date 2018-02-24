@@ -1,0 +1,79 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 8.2.2018
+  Features:
+    - added compatibility for qumojo's ShinyBob
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 1.2.2018
+  Bugfixes:
+    - Icons are preferred over icon, fixes ShinyBob compatibility  
+    - Overlay is no longer applied to original poles using icons
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 26.12.2017
+  Minor Features:
+    - in game changelog
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 13.12.2017
+  Changes:
+    - updated to Factorio 0.16
+---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 28.9.2017
+  Minor Features:
+    - korean translation (by Xagros)
+  Bugfixes:
+    - russian translation fix (by vlan0)
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 28.9.2017
+  Changes:
+    - push to base 0.15.34
+  Minor Features:
+    - german translation
+    - russion translation (by vlan0)
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 4.9.2017
+  Major Features:
+    - compatibility to ShinyBobGFX
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 26.6.2017
+  Bugfixes:
+    - fast replace was broken in 1.0.0
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 18.6.2017
+  Bugfixes:
+    - entity validation: item placing entity must also be result of mining placed entity
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 16.6.2017
+  Bugfixes:
+    - works with differing item, entity and recipe names
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 7.6.2017
+  Major Features:
+    - added support for moving poles with PickerExtended
+  Bugfixes:
+    - reset positions for all lamps of older versions on update
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 20.5.2017
+  Major Features:
+    - made all poles fast replacable
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 5.5.2017
+  Bugfixes:
+    - unlocks every technology
+    - error on entities without minable attribute
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0 - First public release
+Date: 4.5.2017
+  Major Features:
+    - adds poles with integrated lamps

@@ -1,0 +1,131 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.12.0
+Date: 18. 01. 2018
+  Minor Features:
+    - The beltplanner item can now be opened directly to show the settings GUI, no need to plop down the entity first anymore.
+    - The settings GUI now behaves more like a normal entity GUI. It can be closed with the default controls and won't be shown together with other similar GUIs anymore.
+    - Steps/tick input is now verified on the fly as you type.
+  Changes:
+    - Updated for Factorio 0.16.
+    - The beltplanner item doesn't automatically get removed from the cursor stack anymore when opening the settings GUI since this wasn't working well in some cases. You can just hit the "clear cursor" button yourself if it's distracting to have an item around in the cursor stack while fiddling with the settings.
+  Bugfixes:
+    - Entity is now indestructible.
+  Optimisations:
+    - Removed some frequently evaluated assertions for code that seems to have been working fine for a long while now.
+    - Commented out debug marker code to avoid runtime checks. If you want to watch the path finder do its thing now you need to uncomment a couple of blocks labeled DEBUG_MARKER instead of setting place_debug_marker = true in control.lua.
+---------------------------------------------------------------------------------------------------
+Version: 0.11.0
+Date: 05. 05. 2017
+  Graphics:
+    - High-res entity graphics.
+  Changes:
+    - Updated for Factorio 0.15.
+---------------------------------------------------------------------------------------------------
+Version: 0.10.0
+Date: 29. 08. 2016
+  Changes:
+    - Updated for Factorio 0.14.
+    - Changed GUI to use radio buttons instead of checkboxes where it makes sense.
+---------------------------------------------------------------------------------------------------
+Version: 0.9.1
+Date: 06. 07. 2016
+  Graphics:
+    - Updated entity and item graphics. I have no idea what this resulting thing is supposed to be, but it fits a bit better with the overall Factorio style instead of simply being a yellow square.
+  Bugfixes:
+    - Fixed that start markers would disappear when the tile they were on got modified.
+    - Fixed belt ending avoidance to also take ghosts into account.
+---------------------------------------------------------------------------------------------------
+Version: 0.9.0
+Date: 05. 07. 2016
+  Features:
+    - Added option to reverse belt direction.
+---------------------------------------------------------------------------------------------------
+Version: 0.8.0
+Date: 28. 06. 2016
+  Changes:
+    - Updated for Factorio 0.13.
+  Bugfixes:
+    - Fixed beltplanner item duplication when re-using last end position.
+---------------------------------------------------------------------------------------------------
+Version: 0.7.0
+Date: 06. 06. 2016
+  Major Features:
+    - Added support for pipes.
+  Features:
+    - Added button to re-use last end position if a path finding attempt has been aborted or undone. Useful if you don't like the path finding result, just want to adjust some settings, then find a path between the same positions again.
+  Bugfixes:
+    - The last path piece that gets removed in continuous build mode to place the start marker now gets replaced when the start marker is removed instead of continuing path finding.
+  Optimisations:
+    - Dialed down the self-intersection test a little to not ruin performance as much by only checking a constant number of the last few path elements instead of the whole path. It's possible to construct examples that result in invalid paths, but you really need to go out of your way to do this so it shouldn't be of practical importance.
+---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+Date: 02. 06. 2016
+  Features:
+    - Added option to avoid placing belts in front of existing belt endings to avoid spilling.
+    - Added option to avoid placing belts over resources.
+  Bugfixes:
+    - Fixed some issues with the GUI in case no path had been found.
+---------------------------------------------------------------------------------------------------
+Version: 0.5.1
+Date: 12. 05. 2016
+  Graphics:
+    - Updated technology icon.
+  Bugfixes:
+    - Fixed that self-intersecting paths could be found in certain situations.
+---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 10. 05. 2016
+  Major Features:
+    - No more worries that the belt might be placed exactly where you don't want it: added a preview that lets you accept or cancel the found path before ghosts are placed.
+    - Continuous build mode: a new start marker can automatically be placed on the end position of a previous path so you can easily build a belt piece by piece.
+  Features:
+    - Added option to always place underground belts if possible. (You probably also want to use the "underground belts should be as long as possible" setting with that.)
+  Changes:
+    - Less clutter in the inventory: removed belt type specific start markers and config widget. Now there's only a single belt planner item to do everything with.
+  Bugfixes:
+    - Start markers don't collide with units and can't be blueprinted and deconstructed anymore.
+    - Paths won't be placed through existing entity ghosts anymore.
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 15. 04. 2016
+  Features:
+    - Added config option to allow underground belts on start and end position.
+  Bugfixes:
+    - Fixed several issues that caused subtly flawed to completely nonsensical paths at times.
+  Optimisations:
+    - Removed last remaining linear search, tremendous speed improvement.
+    - Lots of internal restructuring.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 12. 04. 2016
+  Bugfixes:
+    - Already in progress path finding now keeps running when a game is loaded.
+    - Adjusted "as long as possible" underground belt setting to be more reasonable in certain cases.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 11. 04. 2016
+  Major Features:
+    - Background path finding.
+  Minor Features:
+    - Added debug mode showing open and closed set markers.
+  Changes:
+    - Removed blueprints from crafting ingredients.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 04. 04. 2016
+  Bugfixes:
+    - Settings widget item is only given back to the player when the GUI is closed, not when it's opened, so the item doesn't uselessly sit around in the cursor stack the whole time.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 04. 04. 2016
+  Major Features:
+    - Added settings GUI.
+  Features:
+    - Configurable underground belt avoidance.
+    - Configurable underground belt length.
+    - Configurable corner penalty.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 23. 03. 2016
+  Major Features:
+    - Initial release.

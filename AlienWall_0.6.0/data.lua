@@ -1,0 +1,7 @@
+require('prototypes.structures.entity')
+require('prototypes.structures.item')
+require('prototypes.structures.recipe')
+require('prototypes.technologies')
+require('prototypes.item-groups')
+require('prototypes.items.alien-mats')
+require('prototypes.resources.alien-biomass')

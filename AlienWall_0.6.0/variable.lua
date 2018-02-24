@@ -1,0 +1,1 @@
+HybridHP = 500

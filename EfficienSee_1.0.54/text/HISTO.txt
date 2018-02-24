@@ -1,0 +1,120 @@
+##WARNING:
+on big factories, expect a little longer loading time (up to 10-15 seconds) at the first installation of the mod, or at mod upgrades (time to rescan recipes, machines and some production stats).
+
+##TODO:
+- include some virtual signals on circuit network ?
+
+##VERSIONS:
+1.0.52	- crash with alien science pack that disappeared
+1.0.51	- factorio 0.14 compatible, change B key to Ctrl-B (collision with new blueprint key)
+1.0.50	- correct problem in add_recipe_line
+1.0.49	- correct problem in on_research_finished
+1.0.48	- minor debug bug 
+1.0.47	- factorio 0.14 compatible
+1.0.44	- add a ALT+B hotkey to reset counter without opening interface.
+1.0.43	- adapt code to new LUA Product type "item" / "fluid" instead of 0/1.
+1.0.42	- correct : auto-refresh was disabled...
+1.0.41	- correct a very rare bug found by Qon with the Instant Blueprint mod that
+		  uses revive on the ghost of an object that was never created (so no on_creation event...)
+1.0.40	- avoid recipe scanning of forces enemy and neutral, to save memory and loading time.
+		- complete history with other missed consultations.
+		- correct a problem while merging forces in MP.
+1.0.39	- correct a bug when selecting an object belonging to another force.
+1.0.38	- add a recipes and items browsers to open any recipe/item.
+		  click on the main icon of recipe or object pane to open it.
+		- separate assemblers/furnaces/drills computation on 6 different ticks to release cpu stress
+		  + 1 tick to refresh window + 1 desync tick for polling selected machine.
+		- when resetting data (after install or mod change), reset counters to current time,
+		  to show consistent data (total numbers are disturbing beginners).
+		- use machine mem recipe to toggle furnaces on-map infos per recipe.
+		- use machine mem mined entity to toggle drills on-map infos per ore.
+		- now update machine buttons color (double arrow) depending on the display status of on-map infos.
+		- add a show hidden recipe checkbox, with hidden recipes names in orange
+		- create a real help window
+1.0.35	- following a discussion with devs, is_crafting() is not accurate for what we need here
+		  and behave differently depending on machine types if output or input are blocked. 
+		  So let's check if the progress bar moving or not...
+		- a furnace which is not working losts its recipe, so we have to memorize it if we want to
+		  count it correctly in the recipe count and do not have a changing number of furnaces...
+		- better adjust number of working machines per recipe.
+1.0.34	- correct a problem with hidden recipes (should be recorded but not shown)
+		- correct a complex problem with fluid output blocked on multiple output recipes.
+		- can now call 'N' key on a pipe or an offshore pump to read its fluid.
+1.0.32	- correct a problem with output block detection on furnaces that do not work like assemblers...
+		- correct locale problem on keys.
+		- add crafting message at the bottom of main GUI if hovering a machine.
+1.0.31	- add technology infos on recipe + research status + button to research techno.
+		- can now call 'N' on a lab to display higher available science pack recipe and item.
+		- add more tooltips
+		- clean and revamp some sprites
+1.0.29	- improved global reinit when reseting data.
+1.0.28	- change the name of the object pane into item or fluid.
+		- suppress the 99% test on the assembler to detect output full.
+		- set unemployment green to 80% because of rough calculation when assembler is speedy.
+1.0.27	- correct a problem with output block detection on assemblers output inventory that 
+		  stop feeding before full stack size...
+1.0.26	- update dependencies to avoid pb with old factorio versions...
+1.0.25	- corrects a calculation problem on working furnace/assemblers blocked at output.
+1.0.24	- can now read a fluid from a storage tank with 'N'.
+		- simplify on_config event, better detect other mod modifs to avoid duplicate reset data.
+		- adapt to new find_entities working on whole surface.
+		- WARNING :	
+			Due to past memory problems, to clean your map file from possible unwanted data,
+			if upgrading from mod v < 1.0.24,
+			I recommand uninstalling the mod, loading your map, saving it to clean mod internal data.
+			Then reinstalling the last mod version from scratch.
+			The better would even be to start from an old map save that never saw the mod before... :-)
+		
+1.0.23	- correct a bug while loading machines at the beginning (assemblers and furnaces were inversed in machine stats!).
+1.0.22	- correct a bug/crash while uninstalling a big recipes mod : need to freshly recreate
+		  recipes list and not only updating it. (bad use of table.remove)
+1.0.21	- now mining drills and pumpjack are taken into account as machines (like assemblers and furnaces)
+		  You can see if they are working using 'B' and browse their ore stats with 'N'.
+		- correct a bug if opening window with a no-recipe-assembler.
+1.0.20	- now, in the GUI, you can click the main recipe or object buttons with an object in 
+		  your hand to browse the corresponding recipe or item.
+		- correct a possible gui problem with recipe duplicated in ingredients and products list.
+1.0.19	- minor gui change
+1.0.18	- due to big memory problems with some users using many mods and recipes,
+		  I had to rewrite all the core once again, with less stored data.
+		- new way to manage/update machine counts.
+		- delete total machine counts from recipe line and put them once on the bottom line
+1.0.16 	- basically a revert to 1.0.13 because of memory problems with users with lots of mods.
+		  I work on this.
+1.0.15	- revamp all data, to minimise useless calculations, and optimise data refresh
+		- add production rate in recipes list, with a filter on unused recipes, to
+		  lighten this potentially huge list (on the "ingredient of" side).
+		- default polling time to 88/60 s (now that everything is quite optimized)
+1.0.13	- new GUI : no more main list, too cpu consuming and too big and thus useless. 
+		- 1 single window with 1 recipe pane, and one object/product-of/ingredients-of pane.
+        - use B on selected machine to toggle on-map infos of the corresponding family.
+		- if no machine selected, B toggles all on-map infos machines on/off.
+        - use N on selected machine to display recipe in main window.
+		- if no machine selected, N opens/closes the main window.
+		- Help button to display a short help.
+1.0.11	- correct problem with rocket-parts and hidden recipes.
+1.0.10	- forgot the debug mode on in 1.0.9... please update to avoid strange messages !
+1.0.9 	- better init surface scan to avoid duplicate big assemblers (oil refinery)
+		- now assemblers/furnaces stats are only computed since their on-map info is enabled.
+		  (average employement rates are calculated from this moment : hiding this on-map
+		  info resets the corresponding data)
+		- option to disable to whole mod (click window main icon does it too).
+		- default polling time to 116/60 s
+		- minor bugs
+1.0.8 	- bug auto refresh disabled...
+1.0.7 	- revamp on-the-map assemblers/furnaces display in one single icon :
+			- the color of the icon shows the average employement rate (red<50%<yellow<95%<green)
+			- the shape shows immediate problem on input or output
+			(left arrow=starved input, square=crafting, right arrow = output full)
+			The result is easier to refresh and thus less cpu stress or slowdowns.
+			You can still hover on a machine to get its "precise" employement rate at the bottom of the mod window.
+1.0.6 	- add i/o info on map for machines with empty input or overflowed output (buttons or key 'h').
+        - add an options menu for settings, to lighten the main window.
+		- add low employement limit option.
+		- add polling time option for gui refresh frequency in 1/60th seconds.
+		- now "auto refresh" also refreshes data on the map.
+		- add localised tooltips on buttons and checkboxes
+1.0.3 	- lower the poll frequency to avoid perfect 3 sec timing. correct a bug on recipe display. 
+        - adds a customisable hotkey "b" for toggle machines stat display on/off without entering the GUI.
+1.0.2	- adds an history. sorts lists alphabetically. "show unused" option in item pane to display only actually used recipes.
+1.0.0 	- initial release

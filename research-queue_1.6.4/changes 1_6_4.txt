@@ -1,0 +1,8 @@
+1.6.4
+- More fixes
+- Added quick search (searches only in english since I didn't figured out how to get Localized name in plain string)
+1.6.3
+- Fixed crush in GUI when no technology style is generated (this happens somewhere in Angel's mods)
+- Moved config to settings
+- Added optional dependencies to Angels' mods
+- Fixed versions in dependencies

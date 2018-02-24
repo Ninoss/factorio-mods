@@ -1,0 +1,112 @@
+[b][size=150]Infos[/size][/b]
+[list]
+[*]Type: Mod
+[*]Name: EfficienSee
+[*]Description: Optimise your factory efficiency ! Check your production rates per items and recipes, hunting for under or over production, and display underemployed, blocked or starved machines on the map: useful to see where are the weak links in your production chain.
+[*]Tested-With-Factorio-Version: 0.13.10 (needed)
+[*]Multiplayer compatible: tested on a headless server...
+[*]Locale: english, french
+[*]Tags: mega base, factory efficiency, production statistics
+[*]License: You are free to use and distribute this mod and also to modify it for personal use, but not to release a modified version without permission (unless visibly not maintained anymore).
+[*]Portal download : https://mods.factorio.com/mods/binbinhfr/EfficienSee[/list]
+[attachment=0]logo.png[/attachment]
+[spoiler=INTRODUCTION]When you left Earth Central and The Universe Company Office last year, diving into deep space with your spaceship, you thought that you won't have to do boring paperwork anymore. Well, it was until the guys from Quality Assurance manage to reach you on the long wave intercom. They even sent you their last piece of software, so that they can audit you from a distance of 10 light-years !
+
+They join a little note saying that you won't manage your factory like a poker game anymore, taking smoking pauses and days off whenever you want...
+Now it is time for optimisation, rationalism and ISO 50001 process management !!!
+
+EfficienSee software is here to help you finding out where are the places in the production tree where your factory is inefficient, i.e. underproducing (production of an item is too low comparing to consumption needs) or overproducing (too many items produced in comparison with needs), or where machines (assemblers, furnaces or drills) are unemployed.
+
+You can browse all recipes and items used in your factory and control their under/over-production rate (production-consumption average over time), and also view an item per its linked recipes to control the rates of its ingredients or derivated products.
+
+Now you will have a real chance to be efficient ! (remember ? that what your ex-wife was always asking you to be... :twisted: )[/spoiler]
+[spoiler=IMAGES][attachment=2]screen11.jpg[/attachment]
+Well Ok, it was a stupid example, but useful to show you the interface  8-) 
+Now a more useful example on a real size factory :
+[attachment=1]screen12.jpg[/attachment][/spoiler]
+[spoiler=DESCRIPTION]- WARNING : at the first installation, or when upgrading some alternate mods, on some big factories, there could be some data treatment done by EfficienSee (updating list of machines, list of recipes, etc...), so don't be afraid if there is a little loading time of a few more seconds (up to 10-15 sec on very large bases)... This would not be the case at next classic launch.
+
+Efficiency can display statistics in a dedicated window and informations on the map (colored shaped icons on machines).
+
+To open the window, use the main "ε+" icon in the top bar, or press 'N'.
+
+The main window of the mod is separated into a top line of general buttons and options and two panes :
+- a recipe pane, that shows a recipe with every item/fluid involved as ingrediens or products with their production stats.
+- an object pane that shows an item or a fluid by its presence in multiple recipes as a product or an ingredient, and the corresponding machines working on each recipe.
+
+You have several way to load a recipe or an item/fluid (that we will call "objects") in these two panes :
+- If you click on one object (item or fluid) in the recipe pane ingredients/products list, the object will be loaded in the object pane.
+- If you click on one recipe in the object pane dependencies, the recipe will be loaded in the recipe pane.
+
+- If you click on the main left top icon in the recipe pane, you will open a recipes browser to pickup any recipe of the game.
+- If you click on the main left top icon in the object pane, you will open a items/fluids browser to pickup any object of the game.
+
+- If, on the ground, you hover on a machine that has a recipe (assembler/furnace/rocket silo) and press 'N', the corresponding recipe will be loaded in the recipe pane.
+- If, on the ground, you hover on a machine that deals with an item/fluid (mining drill,pumpjack,storage tank,lab) and press 'N', the corresponding object will be loaded in the object pane.
+
+In the recipe pane, you get the name of the recipe, its duration, the number of machines using it (number of working machines / total number of machines), the "research" status of this recipe, that depends on the linked technology.
+And for every object involved as an ingredient or a product, you have the following statistics available :
+- Prod = nb of objects produced (positive), and dP = average nb of objects produced per time
+- Cons = nb of objects consumed (negative), and dC = average nb of objects consumed per time
+- Stock = nb of objects stored (in chest, on belts, on robots, in your bags, in tanks or pipes...), and dS = average nb of objects stored per time
+- the normalised dP (for products) and dC (for ingredients) : a normalised value means that the value is divided by the number of objects needed in the recipe : so you can compare these numbers and see if they are balanced.
+- the number of recipes in which the ingredient or product appears : you must keep in mind that one specific object consumption is often the sum of several recipes consumptions. (NB : Factorio does not record separate statistics per recipe or per machine, just an overall production and consumption !)
+
+Basically, you have Stock = Prod + Cons, and dS = dP + dC. (remember that Cons and dC are negative)
+
+The averages are calculated from the beginning of the game (if option "total" is checked) or from the last time you hit "reset" button (intermediate time counter).
+From the beginning of the game, you have Prod >= Cons (unless you cheated...) and thus Stock >= 0.
+But if you display the data from the last counter reset, the last assumption is not always true : temporarly, your consumption can be greater than your production if you are eating your stock.
+
+In the object pane, you get the name of the object (its item/fluid type is the title of the pane), and for each recipe concerned by this object, you have :
+  - the dP of the main product of the recipe.
+  - the number of concerned item used as a product or an ingredient
+  - the number of machines (assembling machines, chemical plants, refinery, furnaces, ...) using this recipes : nb of working machines / total number of machines using this recipe. To activate these machine statistics computation, press on the arrow button. 
+
+You have a "unused recipes" checkbox that you can select if you want to show all the recipes involved, even those which are not presently used in your current game.
+
+Anywhere in the window, when you press a double-arrow button, you activate the employement computation of machines concerned by the corresponding recipe. It also displays info on the map, directly on these machines, describing their working status with a colored shaped icon :
+- its color indicates its average employement rate : green if > 80%, yellow if >50%, red if <50% (customisable in the options menu)
+- its shape indicate current problem with inputs or outputs : square if the machine is working, left arrow if input problem, right arrow if output problem.
+
+You can also use the 'B' key to toggle these infos on or off, eventually hovering on a specific machine to only select a family of machines. If you do not select any machines, very machine on the map will be analysed.
+
+Now the indicator that you should check for every item is dS :
+dS < 0 : underproduction : you are consuming your stock which soon will be potentially empty if you go on like this... It will lead to other problems or bottlenecks.
+dS > 0 : overproduction : you are producing more than you are consuming, you should do something with these unused objects (reduce their production or increase the production of other objects of the same recipe).
+dS ~ 0 : equilibrium between production and consumption. Could mean that :
+ - everything is perfectly equilibrated. Thanks to EfficienSee, you are a genius ! Or....
+ - your stock is full and some machines are underemployed : on the recipe, verify the number of working machines, and identify their problem with the icons on the map. There could be a potential overproduction as soon as you increase your storage capacity.
+ - your overall stock is empty (check the stock with "total" time) and your production is not sufficient (thus the number of employed machines is not maximal). Then you should check what recipe this item is an ingredient of, and check if the other ingredients are not overproduced. In this case, you should increase the production of the initial item.
+
+The color of the dS number depends on its range : 
+- red is for underproduction (dS mostly negative), 
+- yellow is for balanced production (dS around 0),
+- green is for overproduction (dS mostly positive).
+
+To audit your factory, the basic steps could be :
+  - Start from top to bottom : look at the final higher items (ex : the rocket part). Check its recipe and see if some ingredients are not overproduced. Look on the map if there are local problems on the machines.
+  - If it is the case, then check the production of the item which is less produced (its dS indicator can be around 0 or negative), or its machines underemployed. 
+  - And browsing from one higher recipe to a lower one, try to find out which is the weaker link or the bottleneck in your production, i.e. the recipe which needs more production to finally re-equilibrate the final product. 
+  - When you make a change in your production, reset the time counter and let the factory run for a few seconds to get new stable average statistics and control the effect of your changes.
+
+The very useful thing is these on-map icons. They are the way to correlate the window overall numbers with the reality of the map. With keys N and B, you can quickly swap from one recipe to another, of from one family of machines to another, just hovering on them on the map and clicking N or B.[/spoiler]
+[spoiler=NOTES]- You can navigate through the history of consultations using the left/right arrow buttons. You can clear the history from the options menu.
+
+- the stats calculation can be CPU demanding on a large factory. So most of the calculations are done only when the window is opened. If the window is closed, the potential cpu stress is quite released. It is the same with on-map infos. So you should not let all these nice icons displayed all the time if you want to get a totally fluid playtime on a huge factory.  ;)   If you want to disable any calculation, you can click on the upper left ε+ button in the main window.
+
+- you can manually refresh the stats using the "refresh button". You can disable automatic 1sec refreshing using the "auto" option.
+
+- Using the "Option" button, you can access :
+   - the thresholds of the dS color indicator in %. (red<yellow<green)
+   - the threshold of the employement rate color indicator in %. (red<yellow<green)
+   - the polling time of the refresh process in 1/60s. The default value is 88 (a little emore than 1 sec). You cannot go under 4/60s.
+   - you clean the history (that contains last 50 consultations)
+
+- the employement rate of a machine is a rough estimation of its employement rate since the last counter reset. Don't expect precision, it is just to hunt for problems. 
+
+- 'N' and 'B' keys can be customised in the Factorio/options/controls/mods menu.
+
+- items produced by cheat are not counted as produced, but they will be counted as soon as they are consumed. So, if on a map, since its creation, you have some items that are more consumed than produced, it means that there was some cheating around  :roll: 
+
+- for those who wonder how I can zoom out so wide on my screencopies, please use my [url=https://mods.factorio.com/mods/binbinhfr/Zoom]Zoom[/url] mod.[/spoiler]
