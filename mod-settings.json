@@ -119,6 +119,15 @@
     },
     "rso-vanilla-biter-generation": {
       "value": false
+    },
+    "picker-colored-books": {
+      "value": true
+    },
+    "picker-use-notes": {
+      "value": true
+    },
+    "picker-notes-slot-count": {
+      "value": 51
     }
   },
   "runtime-global": {
@@ -319,6 +328,27 @@
     },
     "rso-multi-resource-active": {
       "value": true
+    },
+    "picker-autodeconstruct": {
+      "value": true
+    },
+    "picker-autodeconstruct-target": {
+      "value": true
+    },
+    "picker-train-honk": {
+      "value": true
+    },
+    "picker-notes-default-message": {
+      "value": ""
+    },
+    "picker-notes-default-autoshow": {
+      "value": false
+    },
+    "picker-notes-default-mapmark": {
+      "value": false
+    },
+    "picker-notes-use-color-picker": {
+      "value": true
     }
   },
   "runtime-per-user": {
@@ -420,6 +450,57 @@
     },
     "autofill-ghost": {
       "value": true
+    },
+    "picker-simple-blueprint": {
+      "value": true
+    },
+    "picker-find-orphans": {
+      "value": true
+    },
+    "picker-itemcount": {
+      "value": true
+    },
+    "picker-search-light": {
+      "value": true
+    },
+    "picker-hide-minimap": {
+      "value": true
+    },
+    "picker-auto-sort-inventory": {
+      "value": false
+    },
+    "picker-alt-mode-default": {
+      "value": true
+    },
+    "picker-auto-manual-train": {
+      "value": true
+    },
+    "picker-camera-gui": {
+      "value": false
+    },
+    "picker-camera-aa": {
+      "value": false
+    },
+    "picker-camera-zoom": {
+      "value": 1
+    },
+    "picker-blueprint-last": {
+      "value": false
+    },
+    "picker-remember-planner": {
+      "value": true
+    },
+    "picker-no-blueprint-inv": {
+      "value": "none"
+    },
+    "picker-no-deconstruction-planner-inv": {
+      "value": "none"
+    },
+    "picker-no-other-planner-inv": {
+      "value": "none"
+    },
+    "picker-item-zapper-all": {
+      "value": false
     }
   }
 }
