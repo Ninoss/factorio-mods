@@ -133,6 +133,10 @@
       "enabled": true
     },
     {
+      "name": "TombStones",
+      "enabled": false
+    },
+    {
       "name": "VehicleSnap",
       "enabled": true
     },
